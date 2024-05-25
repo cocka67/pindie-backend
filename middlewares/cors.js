@@ -1,4 +1,4 @@
-const allowedCors = ["https://pindle-backend.nomoredomainswork.ru", "https://pindie.nomoredomainswork.ru", "https://localhost:3000", "https://localhost:3001"];
+const allowedCors = ["https://pindle-backend.nomoredomainswork.ru", "https://pindie.nomoredomainswork.ru", "https://localhost:3000", "https://localhost:3001", 'mongodb://localhost:27017/pindie'];
 
 function cors(req, res, next) {
   const { origin } = req.headers;
