@@ -19,6 +19,7 @@ const sendCategoryById = (req, res) => {
 
 const sendCategoryUpdated = (req, res) => {
   res.setHeader("Content-Type", "application/json");
+  res.end(JSON.stringify(req.category));
   res.end({ message: "Категория обновлена" });
 };
 
